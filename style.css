@@ -398,7 +398,7 @@ section h1 {
     text-shadow: 3px 2px 0px rgba(150, 150, 150, 0.48);
 }
 .content p {
-    margin: 20% 0 20% 15%;
+    margin: 0 0 0 15%;
     padding:10px;
 }
 .table_1, .table_1_1 {
@@ -407,6 +407,7 @@ section h1 {
     max-width: 44%;
 }
 .content {
+    padding: 100px 0;
     border-bottom: 1px solid rgba(107,68,123, 0.7);
      -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
 -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
