@@ -25,9 +25,9 @@ section h1 {
     font-weight: 200;
     text-transform:;
     padding: 10px;
-    font-size: 3em;
+    font-size: 1.3em;
     position: absolute;
-    top: 855px;
+    top: 331.5px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -42,10 +42,10 @@ section h1 {
     background-color: #FFFFFF  ;
     color: #674679;
     padding: 5px 10px;
-    font-size: 3em;
+    font-size: 1em;
     border: none;
     cursor: pointer;
-    height: 150px;
+    height: 80px;
     border-bottom: 5px solid rgb(141, 111, 153);
 }
 
@@ -68,7 +68,7 @@ section h1 {
     display: none;
     position: absolute;
     background-color: #FFF;
-    min-width: 500px;
+    min-width: 250px;
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -77,11 +77,11 @@ section h1 {
 /* Links inside the dropdown */
 .dropdown-content a {
     color: #210332;
-    padding: 30px 25px;
+    padding: 10px 5px;
     text-decoration: none;
     display: block;
     border-top: 0.5px solid rgb(141, 111, 153);
-    font-size: 3em;
+    font-size: 1em;
 }
 
 /* Change color of dropdown links on hover */
@@ -94,17 +94,13 @@ section h1 {
 
 nav .container {
     display: flex;
-       -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-
+  
  
 
 }
 nav {
-    height: 150px;
+    height: 80px;
     background: #FFF;
-
     z-index: 4000;
     width: 100%;
     border-bottom: 5px solid rgb(141, 111, 153);
@@ -116,7 +112,7 @@ nav {
 
 
 #logo {
-    height: 130px;
+    height: 60px;
     margin: auto;
 }
 
@@ -128,15 +124,15 @@ nav {
     
     background: 
      linear-gradient(to bottom, rgba(141, 111, 153,0.6), rgba(255,255,255, 0)),
-    url('kobieta1.jpeg') no-repeat top right 75%;
+    url('img/kobieta1.jpeg') no-repeat top right 75%;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.9;
     width: 100%;
-    height: 800px;
+    height: 300px;
     -webkit-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
 -moz-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
+box-shadow: inset -1px -200px 0px -150px rgba(0,0,0,0.75);
 
 
 }
@@ -153,27 +149,30 @@ box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
 
 .content h2 {
    
-    margin:30px 0 0 0;
+    margin:20px 0 0 0;
     padding: 30px 10px;
     text-align: left;
     color: #674679;
     letter-spacing: 2px;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 1.725em;
     text-shadow: 3px 2px 0px rgba(150, 150, 150, 0.48);
 }
 .content p {
     
-    font-size: 1.725em;
+    font-size: 1.275em;
     padding-left: 15px;
     text-align: left;
-    margin:40px 20px  180px;
+    margin:20px 20px  80px 10px;
     border-left: 5px solid rgb(141, 111, 153);
 }
 
 .table_1 {
     height: auto;
     width: 100%;
+}
+.table_1_1 {
+    display: none;
 }
 
 .shadow {
@@ -184,38 +183,46 @@ box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
 
 
  .table_3 {
-    background: url('bio_hyalux_lips.jpg') no-repeat center center;
-    height: 700px;
--webkit-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
--moz-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.1);
+    background: url('img/bio_hyalux_lips.jpg') no-repeat center center;
+    background-size: 90%;
+    height: 400px;
+    width: 100%;
+-webkit-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
+-moz-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
+box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.1);
 position: relative;
 
 }
 
 .table_4 {
-    background: url('bio_hyalux_fine_lines.jpg') no-repeat center center;
-    height: 700px;
--webkit-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
--moz-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.1);
+    background: url('img/bio_hyalux_fine_lines.jpg') no-repeat center center;
+    background-size: 90%;
+    height: 400px;
+    width: 100%;
+-webkit-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
+-moz-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
+box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.1);
 position: relative;
 
 }
 .table_5 {
-    background: url('bio_hyalux_soft.jpg') no-repeat center center;
-    height: 700px;
--webkit-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
--moz-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+    background: url('img/bio_hyalux_soft.jpg') no-repeat center center;
+    background-size: 90%;
+    height: 400px;
+    width: 100%;
+-webkit-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
+-moz-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
+box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.1);
 position: relative;
 }
 .table_6 {
-    background: url('bio_hyalux_deep.jpg') no-repeat center center;
-    height: 700px;
--webkit-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
--moz-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+    background: url('img/bio_hyalux_deep.jpg') no-repeat center center;
+    background-size: 90%;
+    height: 400px;
+    width: 100%;
+-webkit-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
+-moz-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
+box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.1);
 position: relative;
 }
 
@@ -226,26 +233,26 @@ position: relative;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    font-size: 3em;
+    font-size: 1.5em;
     color:#5A4F61;
     text-shadow: 3px 2px 0px rgba(150, 150, 150, 0.48);
       -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
 -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
 box-shadow: 0px 40px 60px -40px rgba(0,0,0,0.5);
-height: 700px;
+height: 300px;
 letter-spacing: 2px;
 
 }
 
 #lips, #fine, #basic, #deep, p{
-    font-size: 1.725em;
-    padding-left: 30px;
+    font-size: 1em;
+    padding-left: 15px;
     text-align: left;
-    margin:100px 20px  100px 30px;
+    margin:0px 20px  80px 30px;
 }
 #lips {
      border-left: 5px solid rgb(154, 0, 13);
-     
+
 
 }
 .table_3 h3 span {
@@ -280,13 +287,186 @@ letter-spacing: 2px;
     border-left: 5px solid rgb(40, 40, 40);
 }
 
-@media (min-width: 1020px){
-    .photo {
-        height: 800px;
+@media only screen and (min-width: 769px){
+
+nav {
+    z-index: 5000;
+    position: fixed;
+}
+nav .container {
+    border-bottom: 5px solid rgb(141, 111, 153);
+    background: #FFF;
+    width: 70%;
+    height: 80px;
+    display: inline-flex;
+    width: 80%;
+    height: 80px;
+    flex-direction: row;
+}
+.dropbtn, .dropbtn:active{
+    display: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    display: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: initial;
+    width: 100%;
+    height: auto;
     }
-    section h1 {
-        top: 758px;
-        opacity: 1
-        z-index: 5000;
+
+/* Dropdown Content (Hidden by Default) */
+div#myDropdown.dropdown-content {
+
+    position: initial;
+    display: inline-flex;
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    align-items: stretch;
+    box-shadow: none;
+    border-bottom: 5px solid rgb(141, 111, 153);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    flex: 1 1 auto;
+    color: #210332;
+    text-decoration: none;
+    border: none;
+    font-size: 1.125em;
+    padding: none;
+    line-height: 3em;
+}
+.dropdown-content a:hover {
+    border-bottom: 5px solid #FFF;
+    background-color: rgba(141, 111, 153, 0.5);
+    height: 80px;
+    color: white;
+}
+#logo {
+    flex: 1 1 auto;
+    order: -1;
+    padding: 0 20px;
+ 
+}
+section .container {
+    width: 100%;
+}
+.photo {
+    margin-top: 80px;
+    height:800px;
+}
+
+section h1 {
+    top: 824px;
+    font-size: 2em
+}
+
+#czym {
+    width: 80%;
+    margin: 0 auto;
+
     }
+    .content {   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    }
+
+
+.table_1, .table_1_1 {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    width: 20px;
+}
+.content h2 {
+   margin:0;
+   padding: 0 100px 0 0 ;
+    text-align: left;
+    color: #674679;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 1.725em;
+    text-shadow: 3px 2px 0px rgba(150, 150, 150, 0.48);
+}
+.content p {
+    margin: 20% 0 20% 15%;
+    padding:10px;
+}
+.table_1, .table_1_1 {
+    flex: 1 1 auto;
+    height: auto;
+    max-width: 44%;
+}
+.content {
+    border-bottom: 1px solid rgba(107,68,123, 0.7);
+     -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 40px 60px -40px rgba(0,0,0,0.5);
+}
+footer {
+    height:80px;
+    width: 100%;
+    background-color: rgba(107,68,123, 0.7);
+}
+    
+.table_1 h2, .table_1_1 h2 {
+    font-size: 3em;
+}
+#produkty {
+    padding: 10% 0;
+    width: 80%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.table_3, .table_4, .table_5, .table_6, p {
+    flex: 1 1 auto;
+    max-width: 44%;
+    background-size: 60%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+ {
+    max-width: 44%;
+    margin-bottom: 100px;
+    padding: 0;
+
+}
+
+#lips, #fine, #basic, #deep, p {
+    margin:0 0 100px 0;
+    padding: 0 0 0 30px;
+    font-size: 1.125em;
+}
+.table_3 {
+    order: 1;
+}
+#lips {
+    order: 3;
+}
+.table_4 {
+    order: 2;
+}
+
+#fine { order: 4 ;
+}
+
+.table_5 { order: 5;
+}
+.table_6 {order: 6;}
+#basic { order: 7;}
+#deep {order: 8;}
+
 }
