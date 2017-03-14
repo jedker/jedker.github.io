@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: 200;
+    background-color: 
+}
+
+section .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+   
+}
+section h1 span {
+font-size: 20px;
+}
+section h1 {
+    color: #FFF;
+    font-weight: 200;
+    text-transform:;
+    padding: 10px;
+    font-size: 3em;
+    position: absolute;
+    top: 855px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 6000;
+    text-shadow: 3px 2px 11px rgba(255, 255, 255, 0.17);
+
+}
+
+/* Dropdown Button */
+.dropbtn, .dropbtn:active{
+    background-color: #FFFFFF  ;
+    color: #674679;
+    padding: 5px 10px;
+    font-size: 3em;
+    border: none;
+    cursor: pointer;
+    height: 150px;
+    border-bottom: 5px solid rgb(141, 111, 153);
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #674679;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    min-width: 400px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #210332;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-top: 0.5px solid rgb(141, 111, 153);
+    font-size: 2em;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+nav .container {
+    display: flex;
+       -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+
+ 
+
+}
+nav {
+    height: 150px;
+    background: #FFF;
+
+    z-index: 4000;
+    width: 100%;
+    border-bottom: 5px solid rgb(141, 111, 153);
+
+
+
+}
+
+
+
+#logo {
+    height: 130px;
+    margin: auto;
+}
+
+
+
+
+
+.photo {
+    
+    background: 
+     linear-gradient(to bottom, rgba(141, 111, 153,0.6), rgba(255,255,255, 0)),
+    url('img/kobieta1.jpeg') no-repeat top right 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    width: 100%;
+    height: 800px;
+    -webkit-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
+box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
+
+
+}
+
+    
+   section .container {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+.content h2 {
+   
+    margin:30px 0 0 0;
+    padding: 30px 10px;
+    text-align: left;
+    color: #674679;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 3em;
+    text-shadow: 3px 2px 0px rgba(150, 150, 150, 0.48);
+}
+.content p {
+    
+    font-size: 1.725em;
+    padding-left: 15px;
+    text-align: left;
+    margin:40px 20px  180px;
+    border-left: 5px solid rgb(141, 111, 153);
+}
+
+.table_1 {
+    height: auto;
+    width: 100%;
+}
+
+.shadow {
+
+
+
+}
+
+
+ .table_3 {
+    background: url('img/bio_hyalux_lips.jpg') no-repeat center center;
+    height: 700px;
+-webkit-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+-moz-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.1);
+position: relative;
+
+}
+
+.table_4 {
+    background: url('img/bio_hyalux_fine_lines.jpg') no-repeat center center;
+    height: 700px;
+-webkit-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+-moz-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.1);
+position: relative;
+
+}
+.table_5 {
+    background: url('img/bio_hyalux_soft.jpg') no-repeat center center;
+    height: 700px;
+-webkit-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+-moz-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+position: relative;
+}
+.table_6 {
+    background: url('img/bio_hyalux_deep.jpg') no-repeat center center;
+    height: 700px;
+-webkit-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+-moz-box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+box-shadow: inset 0px 130px 0px -9px rgba(0,0,0,0.2);
+position: relative;
+}
+
+.img h3 {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
+    color:#5A4F61;
+    text-shadow: 3px 2px 0px rgba(150, 150, 150, 0.48);
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 40px 60px -40px rgba(0,0,0,0.5);
+height: 700px;
+letter-spacing: 2px;
+
+}
+
+#lips, #fine, #basic, #deep, p{
+    font-size: 1.725em;
+    padding-left: 30px;
+    text-align: left;
+    margin:100px 20px  100px 30px;
+}
+#lips {
+     border-left: 5px solid rgb(154, 0, 13);
+     
+
+}
+.table_3 h3 span {
+    color: rgb(154, 0, 13);
+    font-weight: 600;
+}
+.table_4 h3 span {
+    color: rgb(0, 36, 137);
+    font-weight: 600;
+}
+.table_5 h3 span {
+    color: rgb(255,255,255);
+    font-weight: 600;
+}
+.table_6 h3 span {
+    color: rgb(40, 40, 40);
+    font-weight: 600;
+}
+
+#fine {
+    
+    border-left: 5px solid rgb(0, 36, 137);
+}
+
+#basic {
+
+    border-left: 5px solid rgb(220,220,220);
+}
+
+#deep {
+
+    border-left: 5px solid rgb(40, 40, 40);
+}
+
+@media (min-width: 1020px){
+    .photo {
+        height: 800px;
+    }
+    section h1 {
+        top: 758px;
+        opacity: 1
+        z-index: 5000;
+    }
+}
