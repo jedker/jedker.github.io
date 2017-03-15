@@ -64,9 +64,34 @@ $(window).scroll(function(event) {
   
 });
 
+
+
 $(window).scroll(function(event) {
   
   $(".table_1_1").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-left"); 
+    } 
+  });
+  
+});
+
+
+var win = $(window);
+var allMods = $("#czym");
+
+// Already visible modules
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
       el.addClass("come-right"); 
@@ -74,7 +99,6 @@ $(window).scroll(function(event) {
   });
   
 });
-
 
 
 $("#click").click(function () {
