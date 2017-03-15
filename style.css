@@ -339,6 +339,31 @@ section .container {
   to { transform: translateY(0); }
 }
 
+.come-left {
+  transform: translateX(-500px);
+  animation: come-in 1s ease forwards;
+}
+.come-left:nth-child(odd) {
+  animation-duration: 1s; /* So they look staggered */
+}
+
+@keyframes come-left {
+  to { transform: translateX(0); }
+}
+
+.come-right {
+  transform: translateX(1000px);
+  animation: come-in 1s ease forwards;
+}
+.come-left:nth-child(odd) {
+  animation-duration: 1s; /* So they look staggered */
+}
+
+@keyframes come-right {
+  to { transform: translateX(0); }
+}
+
+
 @media only screen and (min-width: 768px){
 
 nav {
