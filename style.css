@@ -406,20 +406,20 @@ div#myDropdown.dropdown-content {
  
 }
 section .container {
-    width: 90%;
+    width: 100%;
 }
 .photo {
     margin-top: 80px;
-    height:700px;
+    height:550px;
 }
 
 section h1 a{
-    top: 724px;
+    top: 574px;
     font-size: 1.325em
 }
 
 #czym {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 
     }
@@ -542,4 +542,205 @@ footer {
 #deep {order: 8;}
 }
 
+@media only screen and (min-width: 1377px){
 
+nav {
+    z-index: 5000;
+    position: fixed;
+
+}
+nav .container {
+    border-bottom: 5px solid rgb(141, 111, 153);
+    background: #FFF;
+    width: 100%;
+    display: inline-flex;
+    height: 80px;
+    flex-direction: row;
+}
+.dropbtn, .dropbtn:active{
+    display: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    display: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: initial;
+    width: 100%;
+    height: auto;
+    }
+
+/* Dropdown Content (Hidden by Default) */
+div#myDropdown.dropdown-content {
+
+    position: initial;
+    display: inline-flex;
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    align-items: stretch;
+    box-shadow: none;
+    border-bottom: 5px solid rgb(141, 111, 153);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    flex: 1 1 auto;
+    color: #210332;
+    text-decoration: none;
+    border: none;
+    font-size: 1.125em;
+    padding: none;
+    line-height: 3em;
+}
+.dropdown-content a:hover {
+    border-bottom: 5px solid #FFF;
+    background-color: rgba(141, 111, 153, 0.5);
+    height: 80px;
+    color: white;
+}
+#logo {
+    flex: 1 1 auto;
+    order: -1;
+    padding: 0 20px;
+ 
+}
+section .container {
+    width: 80%;
+}
+.photo {
+    margin-top: 80px;
+    height:800px;
+}
+
+section h1 a{
+    top: 824px;
+    font-size: 1.325em
+}
+
+#czym {
+    width: 100%;
+    margin: 0 auto;
+
+    }
+    .content {display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    }
+
+.table_1 {
+    border: none;
+    height: 300px;
+}
+.table_1_1 {
+    border: none;
+}
+.table_1, .table_1_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.content h2 {
+   margin:0;
+   padding:10px 0;
+    text-align: center;
+    color: #674679;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-shadow: 1px 2px 0px rgba(150, 150, 150, 0.48);
+}
+.content p {
+
+border-left: 1px solid rgba(150, 150, 150, 0.48);
+    margin: 0;
+    padding: 10px;
+    min-width: 100%;
+}
+.table_1, .table_1_1 {
+    flex: 1 1 auto;
+    height: auto;
+    margin: 5%;
+    padding:0;
+
+}
+.content {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(107,68,123, 0.7);
+     -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 40px 60px -40px rgba(0,0,0,0.5);
+}
+footer {
+    height:80px;
+    width: 100%;
+    background-color: rgba(107,68,123, 0.7);
+}
+    
+
+#produkty {
+
+    padding: 10% 0;
+    width: 80%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.come-in {
+  transform: translateY(300px);
+  animation: come-in 2s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 2s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+
+.table_3, .table_4, .table_5, .table_6, p {
+    flex: 1 1 auto;
+    max-width: 44%;
+    background-size: 60%;
+    padding: 0;
+    margin: 0;
+    
+}
+ p{
+    max-width: 44%;
+    margin-bottom: 100px;
+    padding: 0;
+}
+#lips, #fine, #basic, #deep, p {
+    margin:0 0 100px 0;
+    padding: 0 0 0 30px;
+    font-size: 1.125em;
+}
+.table_3 {
+    order: 1;
+}
+#lips {
+    order: 3;
+}
+.table_4 {
+    order: 2;
+}
+#fine { order: 4 ;
+}
+.table_5 { order: 5;
+}
+.table_6 {order: 6;}
+#basic { order: 7;}
+#deep {order: 8;}
+}
