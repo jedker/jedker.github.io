@@ -27,7 +27,7 @@ section h1 a{
     font-size: 0.8em;
     position: absolute;
     /*For centering */
-    top: 331.5px;
+    top: 531.5px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -244,11 +244,11 @@ section .container {
 .photo {
     background: 
      linear-gradient(to bottom, rgba(141, 111, 153,0.6), rgba(255,255,255, 0)),
-    url('kobieta1.jpeg') no-repeat top right 75%;
+    url('img/kobieta1.jpeg') no-repeat top right 75%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 500px;
     -webkit-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
     -moz-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
     box-shadow: inset -1px -200px 0px -150px rgba(0,0,0,0.75);
@@ -274,18 +274,18 @@ section .container {
 /******** PRODUCT IMAGES SIZING AND SHADOW ********/
 
  .table_3 {
-    background: url('bio_hyalux_lips.jpg') no-repeat center center;
+    background: url('img/bio_hyalux_lips.jpg') no-repeat center center;
 }
 
 .table_4 {
-    background: url('bio_hyalux_fine_lines.jpg') no-repeat center center;
+    background: url('img/bio_hyalux_fine_lines.jpg') no-repeat center center;
 }
 .table_5 {
-    background: url('bio_hyalux_soft.jpg') no-repeat center center;
+    background: url('img/bio_hyalux_soft.jpg') no-repeat center center;
     }
 
 .table_6 {
-    background: url('bio_hyalux_deep.jpg') no-repeat center center;
+    background: url('img/bio_hyalux_deep.jpg') no-repeat center center;
 }
 
 .table_3, .table_4, .table_5, .table_6 {
@@ -363,7 +363,6 @@ section .container {
   to { transform: translateX(0); }
 }
 
-
 @media only screen and (min-width: 768px){
 
 nav {
@@ -383,10 +382,7 @@ nav .container {
     display: none;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    display: none;
-}
+
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -456,10 +452,7 @@ section h1 a{
 
     }
 
-.table_1 {
-    border: none;
-    height: 300px;
-}
+
 .table_1_1 {
     border: none;
 }
@@ -518,17 +511,6 @@ footer {
     justify-content: space-between;
 }
 
-.come-in {
-  transform: translateY(300px);
-  animation: come-in 2s ease forwards;
-}
-.come-in:nth-child(odd) {
-  animation-duration: 2s; /* So they look staggered */
-}
-
-@keyframes come-in {
-  to { transform: translateY(0); }
-}
 
 
 .table_3, .table_4, .table_5, .table_6, p {
@@ -721,18 +703,8 @@ footer {
     justify-content: space-between;
 }
 
-.come-in {
-  transform: translateY(300px);
-  animation: come-in 2s ease forwards;
-}
-.come-in:nth-child(odd) {
-  animation-duration: 2s; /* So they look staggered */
-}
 
-@keyframes come-in {
-  to { transform: translateY(0); }
 }
-
 
 .table_3, .table_4, .table_5, .table_6, p {
     flex: 1 1 auto;
@@ -769,3 +741,7 @@ footer {
 #basic { order: 7;}
 #deep {order: 8;}
 }
+
+
+
+
