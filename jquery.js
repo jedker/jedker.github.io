@@ -47,7 +47,7 @@ $(window).scroll(function(event) {
   $(".slide").each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
-      el.addClass("come-in"); 
+      el.addClass("come-left"); 
     } 
   });
   
