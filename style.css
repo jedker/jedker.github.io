@@ -244,7 +244,7 @@ section .container {
 .photo {
     background: 
      linear-gradient(to bottom, rgba(141, 111, 153,0.6), rgba(255,255,255, 0)),
-    url('img/kobieta1.jpeg') no-repeat top right 75%;
+    url('kobieta1.jpeg') no-repeat top right 75%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -274,18 +274,18 @@ section .container {
 /******** PRODUCT IMAGES SIZING AND SHADOW ********/
 
  .table_3 {
-    background: url('img/bio_hyalux_lips.jpg') no-repeat center center;
+    background: url('bio_hyalux_lips.jpg') no-repeat center center;
 }
 
 .table_4 {
-    background: url('img/bio_hyalux_fine_lines.jpg') no-repeat center center;
+    background: url('bio_hyalux_fine_lines.jpg') no-repeat center center;
 }
 .table_5 {
-    background: url('img/bio_hyalux_soft.jpg') no-repeat center center;
+    background: url('bio_hyalux_soft.jpg') no-repeat center center;
     }
 
 .table_6 {
-    background: url('img/bio_hyalux_deep.jpg') no-repeat center center;
+    background: url('bio_hyalux_deep.jpg') no-repeat center center;
 }
 
 .table_3, .table_4, .table_5, .table_6 {
