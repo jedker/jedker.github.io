@@ -1,3 +1,6 @@
+
+/********** RESET ***********/
+/********** MOBILE SIZE ***********/
 *{
     box-sizing: border-box;
     color: #000;
@@ -8,34 +11,164 @@
     font-weight: 200;
     background-color: 
 }
+/********** FONT SIZES AND STYLES ***********/
 
-section .container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    text-align: center;
-   
 }
 section h1 span {
 font-size: 20px;
 }
-section h1 {
-    color: #FFF;
+
+section h1 a{
+    text-decoration: none;
+    color: rgba(255,255,255, 1);
     font-weight: 200;
     text-transform:;
     padding: 10px;
-    font-size: 1.3em;
+    font-size: 0.8em;
     position: absolute;
+    /*For centering */
     top: 331.5px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     z-index: 6000;
-    text-shadow: 3px 2px 11px rgba(255, 255, 255, 0.17);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
+}
+
+section h1 a:hover {
+    color: rgba(255,255,255, 0.7);
+}
+
+.slider {
+    width: 100%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
 
 }
+.click {
+    margin: 0 auto;
+}
+#arrow {
+    opacity: 0.5;
+    display: block;
+    height: 20px;
+    width: auto;
+    margin: 0 auto;
+}
+
+#arrow:hover {
+    opacity: 1;
+}
+
+
+.hidden h1, .hidden p {
+    color: white;
+}
+.hidden p {
+    border-left: 3px solid white;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.hidden{
+
+    display: none;
+    height: 280px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    position: absolute;
+    top:20px;
+    color: #fff;
+    width: 100%;
+
+}
+
+.content h2 {
+   
+    margin:20px 0 20px; 0;
+    padding: 10px 10px;
+    text-align: center;
+    color: #B38DB0;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-shadow: 3px 2px 0px rgba(150, 150, 150, 0.2);
+}
+
+.content p {
+    font-size: 1em;
+    padding: 10px 0px 20px 10px;
+    text-align: left;
+    margin: 0px 0;
+    border-left: 10px solid rgb(141, 111, 153);
+    border-top: 1px solid rgb(141, 111, 153);
+}
+
+.slide h3 {
+    position: absolute;
+    top: 27px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    color:#5A4F61;
+    text-shadow: 2px 1px 0px rgba(150, 150, 150, 0.2);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 40px 60px -40px rgba(0,0,0,0.5);
+    height: 300px;
+    letter-spacing: 1px;
+}
+
+
+
+.table_3 h3 span {
+    color: rgb(154, 0, 13);
+    font-weight: 600;
+}
+.table_4 h3 span {
+    color: rgb(0, 36, 137);
+    font-weight: 600;
+}
+.table_5 h3 span {
+    color: rgb(255,255,255);
+    font-weight: 600;
+}
+.table_6 h3 span {
+    color: rgb(40, 40, 40);
+    font-weight: 600;
+}
+
+
+
+/******** NAV *********/
+
+nav .container {
+    display: flex;
+}
+
+nav {
+    height: 80px;
+    background: #FFF;
+    z-index: 4000;
+    width: 100%;
+    border-bottom: 5px solid rgb(141, 111, 153);
+}
+
+#logo {
+    height: 50px;
+    margin: auto;
+}
+
+
+
+/********** NAV MENU STYLING **********/
 
 /* Dropdown Button */
 .dropbtn, .dropbtn:active{
@@ -91,158 +224,81 @@ section h1 {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+/******** SIZING MAIN CONTAINER *********/
 
-nav .container {
+section .container {
+    margin: 0;
+    padding: 0;
     display: flex;
-  
- 
-
-}
-nav {
-    height: 80px;
-    background: #FFF;
-    z-index: 4000;
-    width: 100%;
-    border-bottom: 5px solid rgb(141, 111, 153);
-
-
-
-}
-
-
-
-#logo {
-    height: 60px;
-    margin: auto;
-}
-
-
-
-
-
-.photo {
-    
-    background: 
-     linear-gradient(to bottom, rgba(141, 111, 153,0.6), rgba(255,255,255, 0)),
-    url('kobieta1.jpeg') no-repeat top right 75%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9;
-    width: 100%;
-    height: 300px;
-    -webkit-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
--moz-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
-box-shadow: inset -1px -200px 0px -150px rgba(0,0,0,0.75);
-
-
-}
-
-    
-   section .container {
     width: 100%;
     margin: 0 auto;
     height: auto;
+    /* BOX SHADOW UNDER MAIN PHOTO */
     -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-}
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+   }
 
-.content h2 {
-   
-    margin:20px 0 0 0;
-    padding: 30px 10px;
-    text-align: left;
-    color: #674679;
-    letter-spacing: 2px;
-    font-weight: 600;
-    font-size: 1.725em;
-    text-shadow: 3px 2px 0px rgba(150, 150, 150, 0.48);
-}
-.content p {
-    
-    font-size: 1.275em;
-    padding-left: 15px;
-    text-align: left;
-    margin:20px 20px  80px 10px;
-    border-left: 5px solid rgb(141, 111, 153);
+/* MAIN PHOTO */
+
+.photo {
+    background: 
+     linear-gradient(to bottom, rgba(141, 111, 153,0.6), rgba(255,255,255, 0)),
+    url('img/kobieta1.jpeg') no-repeat top right 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    -webkit-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
+    box-shadow: inset -1px -200px 0px -150px rgba(0,0,0,0.75);
 }
 
 .table_1 {
     height: auto;
-    width: 100%;
+    width: 100%;   
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    margin: 0px 0 0px 0;
 }
 .table_1_1 {
-    display: none;
+    height: auto;
+    width: 100%;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    margin: 0px 0 100px 0;
 }
 
-.shadow {
-
-
-
-}
-
+/******** PRODUCT IMAGES SIZING AND SHADOW ********/
 
  .table_3 {
-    background: url('bio_hyalux_lips.jpg') no-repeat center center;
-    background-size: 90%;
-    height: 400px;
-    width: 100%;
--webkit-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
--moz-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.1);
-position: relative;
-
+    background: url('img/bio_hyalux_lips.jpg') no-repeat center center;
 }
 
 .table_4 {
-    background: url('bio_hyalux_fine_lines.jpg') no-repeat center center;
-    background-size: 90%;
-    height: 400px;
-    width: 100%;
--webkit-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
--moz-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.1);
-position: relative;
-
+    background: url('img/bio_hyalux_fine_lines.jpg') no-repeat center center;
 }
 .table_5 {
-    background: url('bio_hyalux_soft.jpg') no-repeat center center;
-    background-size: 90%;
-    height: 400px;
-    width: 100%;
--webkit-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
--moz-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.1);
-position: relative;
-}
+    background: url('img/bio_hyalux_soft.jpg') no-repeat center center;
+    }
+
 .table_6 {
-    background: url('bio_hyalux_deep.jpg') no-repeat center center;
+    background: url('img/bio_hyalux_deep.jpg') no-repeat center center;
+}
+
+.table_3, .table_4, .table_5, .table_6 {
     background-size: 90%;
     height: 400px;
     width: 100%;
--webkit-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
--moz-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.1);
-position: relative;
+    -webkit-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.2);
+    box-shadow: inset 0px 90px 0px -9px rgba(0,0,0,0.1);
+    position: relative;
 }
 
-.img h3 {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.5em;
-    color:#5A4F61;
-    text-shadow: 3px 2px 0px rgba(150, 150, 150, 0.48);
-      -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-box-shadow: 0px 40px 60px -40px rgba(0,0,0,0.5);
-height: 300px;
-letter-spacing: 2px;
 
-}
 
 #lips, #fine, #basic, #deep, p{
     font-size: 1em;
@@ -252,25 +308,8 @@ letter-spacing: 2px;
 }
 #lips {
      border-left: 5px solid rgb(154, 0, 13);
+}
 
-
-}
-.table_3 h3 span {
-    color: rgb(154, 0, 13);
-    font-weight: 600;
-}
-.table_4 h3 span {
-    color: rgb(0, 36, 137);
-    font-weight: 600;
-}
-.table_5 h3 span {
-    color: rgb(255,255,255);
-    font-weight: 600;
-}
-.table_6 h3 span {
-    color: rgb(40, 40, 40);
-    font-weight: 600;
-}
 
 #fine {
     
@@ -287,19 +326,31 @@ letter-spacing: 2px;
     border-left: 5px solid rgb(40, 40, 40);
 }
 
-@media only screen and (min-width: 769px){
+/****** SLIDING BOXES ******/
+.come-in {
+  transform: translateY(300px);
+  animation: come-in 1s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 1s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+@media only screen and (min-width: 768px){
 
 nav {
     z-index: 5000;
     position: fixed;
+
 }
 nav .container {
     border-bottom: 5px solid rgb(141, 111, 153);
     background: #FFF;
-    width: 70%;
-    height: 80px;
+    width: 100%;
     display: inline-flex;
-    width: 80%;
     height: 80px;
     flex-direction: row;
 }
@@ -355,59 +406,71 @@ div#myDropdown.dropdown-content {
  
 }
 section .container {
-    width: 100%;
+    width: 90%;
 }
 .photo {
     margin-top: 80px;
-    height:800px;
+    height:700px;
 }
 
-section h1 {
-    top: 824px;
-    font-size: 2em
+section h1 a{
+    top: 724px;
+    font-size: 1.325em
 }
 
 #czym {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 
     }
-    .content {   display: flex;
+    .content {display: flex;
    flex-wrap: nowrap;
    flex-direction: row;
     width: 100%;
     justify-content: space-between;
+
     }
 
-
+.table_1 {
+    border: none;
+    height: 300px;
+}
+.table_1_1 {
+    border: none;
+}
 .table_1, .table_1_1 {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
     align-items: center;
-    width: 20px;
+    justify-content: center;
+    width: 30%;
 }
 .content h2 {
    margin:0;
-   padding: 0 100px 0 0 ;
-    text-align: left;
+   padding:10px 0;
+    text-align: center;
     color: #674679;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 600;
-    font-size: 1.725em;
-    text-shadow: 3px 2px 0px rgba(150, 150, 150, 0.48);
+    font-size: 1.5em;
+    text-shadow: 1px 2px 0px rgba(150, 150, 150, 0.48);
 }
 .content p {
-    margin: 0 0 0 15%;
-    padding:10px;
+
+border-left: 1px solid rgba(150, 150, 150, 0.48);
+    margin: 0;
+    padding: 10px;
+    min-width: 100%;
 }
 .table_1, .table_1_1 {
     flex: 1 1 auto;
     height: auto;
-    max-width: 44%;
+    margin: 5%;
+    padding:0;
+
 }
 .content {
-    padding: 100px 0;
+    padding: 30px 0;
     border-bottom: 1px solid rgba(107,68,123, 0.7);
      -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
 -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
@@ -419,10 +482,9 @@ footer {
     background-color: rgba(107,68,123, 0.7);
 }
     
-.table_1 h2, .table_1_1 h2 {
-    font-size: 3em;
-}
+
 #produkty {
+
     padding: 10% 0;
     width: 80%;
     display: inline-flex;
@@ -430,6 +492,20 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.come-in {
+  transform: translateY(300px);
+  animation: come-in 2s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 2s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+
 .table_3, .table_4, .table_5, .table_6, p {
     flex: 1 1 auto;
     max-width: 44%;
@@ -438,14 +514,11 @@ footer {
     margin: 0;
     
 }
-
- {
+ p{
     max-width: 44%;
     margin-bottom: 100px;
     padding: 0;
-
 }
-
 #lips, #fine, #basic, #deep, p {
     margin:0 0 100px 0;
     padding: 0 0 0 30px;
@@ -460,14 +533,13 @@ footer {
 .table_4 {
     order: 2;
 }
-
 #fine { order: 4 ;
 }
-
 .table_5 { order: 5;
 }
 .table_6 {order: 6;}
 #basic { order: 7;}
 #deep {order: 8;}
-
 }
+
+
