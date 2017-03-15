@@ -1,8 +1,10 @@
 var divs = $('#nav_bar');
 $(window).on('scroll', function() {
    var st = $(this).scrollTop();
-   divs.css({ 'opacity' : (1 - st/800) });
+   divs.css({ 'opacity' : (1 - st/1100) });
 });
+
+
 
 var diva = $('.photo');
 $(window).on('scroll', function() {
@@ -51,6 +53,30 @@ $(window).scroll(function(event) {
   
 });
 
+$(window).scroll(function(event) {
+  
+  $(".table_1").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-left"); 
+    } 
+  });
+  
+});
+
+$(window).scroll(function(event) {
+  
+  $(".table_1_1").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-right"); 
+    } 
+  });
+  
+});
+
+
+
 $("#click").click(function () {
 
     $header = $(this);
@@ -64,4 +90,7 @@ $("#click").click(function () {
     });
 
 });
+
+
+
 
