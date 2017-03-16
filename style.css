@@ -39,7 +39,14 @@ section h1 a{
 section h1 a:hover {
     color: rgba(255,255,255, 0.7);
 }
-
+.slider_container {
+    position: fixed;
+   top:100%;
+  transform: translateY(-100%);
+    width: 100%;
+    height: 20px;
+    z-index: 9999;
+}
 .slider {
     width: 100%;
     height: 20px;
@@ -49,15 +56,19 @@ section h1 a:hover {
     margin: 0 auto;
 
 }
-.click {
+#click {
     margin: 0 auto;
 }
 #arrow {
     opacity: 0.5;
     display: block;
-    height: 20px;
+    height: 20px;   
     width: auto;
     margin: 0 auto;
+}
+
+#click.rotated {
+    transform: rotate(90deg);
 }
 
 #arrow:hover {
@@ -78,11 +89,11 @@ section h1 a:hover {
 .hidden{
 
     display: none;
-    height: 280px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.7);
     margin: 0;
     position: absolute;
-    top:20px;
+
     color: #fff;
     width: 100%;
 
@@ -244,7 +255,7 @@ section .container {
 .photo {
     background: 
      linear-gradient(to bottom, rgba(141, 111, 153,0.6), rgba(255,255,255, 0)),
-    url('kobieta1.jpeg') no-repeat top right 75%;
+    url('img/kobieta1.jpeg') no-repeat top right 75%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -255,6 +266,7 @@ section .container {
 }
 
 .table_1 {
+    transform: translateX(-300px);
     height: auto;
     width: 100%;   
     -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
@@ -263,6 +275,7 @@ section .container {
     margin: 0px 0 0px 0;
 }
 .table_1_1 {
+    transform: translateX(-300px);
     height: auto;
     width: 100%;
     -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
@@ -274,21 +287,22 @@ section .container {
 /******** PRODUCT IMAGES SIZING AND SHADOW ********/
 
  .table_3 {
-    background: url('/bio_hyalux_lips.jpg') no-repeat center center;
+    background: url('img/bio_hyalux_lips.jpg') no-repeat center center;
 }
 
 .table_4 {
-    background: url('/bio_hyalux_fine_lines.jpg') no-repeat center center;
+    background: url('img/bio_hyalux_fine_lines.jpg') no-repeat center center;
 }
 .table_5 {
-    background: url('bio_hyalux_soft.jpg') no-repeat center center;
+    background: url('img/bio_hyalux_soft.jpg') no-repeat center center;
     }
 
 .table_6 {
-    background: url('bio_hyalux_deep.jpg') no-repeat center center;
+    background: url('img/bio_hyalux_deep.jpg') no-repeat center center;
 }
 
 .table_3, .table_4, .table_5, .table_6 {
+    transform: translateX(-200px);
     background-size: 90%;
     height: 400px;
     width: 100%;
@@ -328,7 +342,7 @@ section .container {
 
 /****** SLIDING BOXES ******/
 .come-in {
-  transform: translateY(300px);
+  transform: translateY(100px);
   animation: come-in 1s ease forwards;
 }
 .come-in:nth-child(odd) {
@@ -340,11 +354,11 @@ section .container {
 }
 
 .come-left {
-  transform: translateX(-500px);
-  animation: come-in 1s ease forwards;
+  transform: translateX(-300px);
+  animation: come-in 0.5s ease forwards;
 }
 .come-left:nth-child(odd) {
-  animation-duration: 1s; /* So they look staggered */
+  animation-duration: 0.5s; /* So they look staggered */
 }
 
 @keyframes come-left {
@@ -352,11 +366,11 @@ section .container {
 }
 
 .come-right {
-  transform: translateX(1000px);
-  animation: come-in 1s ease forwards;
+  transform: translateX(+200px);
+  animation: come-in 0.5s ease forwards;
 }
 .come-right:nth-child(odd) {
-  animation-duration: 1s; /* So they look staggered */
+  animation-duration: 0.5s; /* So they look staggered */
 }
 
 @keyframes come-right {
@@ -632,31 +646,26 @@ section h1 a{
 }
 
 #czym {
-    width: 100%;
-    margin: 0 auto;
-
-    }
-    .content {display: flex;
+    width: 80%;
+}
+    .content {
+        display: flex;
    flex-wrap: nowrap;
    flex-direction: row;
-    width: 100%;
     justify-content: space-between;
 
     }
 
-.table_1 {
-    border: none;
-    height: 300px;
-}
+
 .table_1_1 {
     border: none;
 }
 .table_1, .table_1_1 {
-    display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 100%;
 }
 .content h2 {
    margin:0;
@@ -704,42 +713,6 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.come-in {
-  transform: translateY(300px);
-  animation: come-in 2s ease forwards;
-}
-.come-in:nth-child(odd) {
-  animation-duration: 2s; /* So they look staggered */
-}
-
-@keyframes come-in {
-  to { transform: translateY(0); }
-}
-
-.come-left {
-  transform: translateX(-500px);
-  animation: come-in 1s ease forwards;
-}
-.come-left:nth-child(odd) {
-  animation-duration: 1s; /* So they look staggered */
-}
-
-@keyframes come-left {
-  to { transform: translateX(0); }
-}
-
-.come-right {
-  transform: translateX(1000px);
-  animation: come-in 1s ease forwards;
-}
-.come-left:nth-child(odd) {
-  animation-duration: 1s; /* So they look staggered */
-}
-
-@keyframes come-right {
-  to { transform: translateX(0); }
 }
 
 .table_3, .table_4, .table_5, .table_6, p {
