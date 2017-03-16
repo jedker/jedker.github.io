@@ -5,7 +5,7 @@ $(document).ready(function(){
 var diva = $('.photo');
 $(window).on('scroll', function() {
    var sp = $(this).scrollTop();
-   diva.css({ 'opacity' : (1 - sp/600) });
+   diva.css({ 'opacity' : (1 - sp/1200) });
 });
 
 (function($) {
@@ -59,6 +59,8 @@ $(window).scroll(function(event) {
   });
   
 });
+
+
 
 
 
@@ -129,11 +131,11 @@ var newscroll;
 mywindow.scroll(function () {
     newscroll = mywindow.scrollTop();
     if (newscroll > mypos && !up) {
-        $('#nav_bar').stop().slideToggle(300);
+        $('#nav_bar').stop().slideToggle(200);
         up = !up;
         console.log(up);
     } else if(newscroll < mypos && up) {
-          $('#nav_bar').stop().slideToggle(300);
+          $('#nav_bar').stop().slideToggle(200);
         up = !up;
     }
     mypos = newscroll;
@@ -149,32 +151,28 @@ jQuery.fn.rotate = function(degrees) {
                  '-ms-transform' : 'rotate('+ degrees +'deg)',
                  'transform' : 'rotate('+ degrees +'deg)'});
 };
- $('#click').click(function() {
+ $('.slider_container').click(function() {
     rotation += 180;
-    $(this).rotate(rotation);
+    $('#arrow').rotate(rotation);
 });
 
-  $("#click").click(function(){
+  $(".arrow").add("#click_1").click(function(){
       if($(".slider").css('bottom') == '0px'){
-          $(".slider").animate({bottom:'300px'},400);
+          $(".slider").animate({bottom:'440px'},200);
       }
       else
       {
-          $(".slider").animate({bottom:'0px'},300);
+          $(".slider").animate({bottom:'0px'},200);
       }
       
   });
 
-$("#click").click(function () {
+$("#arrow").add('#click_1').click(function () {
 
     $header = $(this);
-    //getting the next element
-    $content = $header.next();
-    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-    $content.slideToggle(500, function () {
-        //execute this after slideToggle is done
-        //change text of header based on visibility of content div
-       
+    $content = $(".hidden");
+    $content.slideToggle(200, function () {
+
     });
 
 });
