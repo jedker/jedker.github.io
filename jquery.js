@@ -75,7 +75,7 @@ $(window).scroll(function(event) {
 
 
 var win = $(window);
-var allMods = $("#czym");
+var allMods = $("");
 
 // Already visible modules
 allMods.each(function(i, el) {
