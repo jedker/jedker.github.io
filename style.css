@@ -266,7 +266,7 @@ section .container {
 }
 
 .table_1 {
-    transform: translateX(-300px);
+    transform: translateX(-1000px);
     height: auto;
     width: 100%;   
     -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
@@ -275,7 +275,7 @@ section .container {
     margin: 0px 0 0px 0;
 }
 .table_1_1 {
-    transform: translateX(-300px);
+    transform: translateX(-1900px);
     height: auto;
     width: 100%;
     -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
@@ -302,7 +302,7 @@ section .container {
 }
 
 .table_3, .table_4, .table_5, .table_6 {
-    transform: translateX(-200px);
+    transform: translateX(-1900px);
     background-size: 90%;
     height: 400px;
     width: 100%;
@@ -314,7 +314,8 @@ section .container {
 
 
 
-#lips, #fine, #basic, #deep, p{
+#lips, #fine, #basic, #deep, {
+    transform: translateX(-1900px);
     font-size: 1em;
     padding-left: 15px;
     text-align: left;
@@ -354,11 +355,11 @@ section .container {
 }
 
 .come-left {
-  transform: translateX(-300px);
-  animation: come-in 0.5s ease forwards;
+  transform: translateX(-1000px);
+  animation: come-in 1s ease forwards;
 }
 .come-left:nth-child(odd) {
-  animation-duration: 0.5s; /* So they look staggered */
+  animation-duration: 1s; /* So they look staggered */
 }
 
 @keyframes come-left {
@@ -366,11 +367,11 @@ section .container {
 }
 
 .come-right {
-  transform: translateX(+200px);
-  animation: come-in 0.5s ease forwards;
+  transform: translateX(+1000px);
+  animation: come-in 1s ease forwards;
 }
 .come-right:nth-child(odd) {
-  animation-duration: 0.5s; /* So they look staggered */
+  animation-duration: 1s; /* So they look staggered */
 }
 
 @keyframes come-right {
