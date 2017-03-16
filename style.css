@@ -314,8 +314,15 @@ section .container {
 
 
 
-#lips, #fine, #basic, #deep, {
+#lips, #fine, #basic, #deep {
     transform: translateX(-1900px);
+    font-size: 1em;
+    padding-left: 15px;
+    text-align: left;
+    margin:0px 20px  80px 30px;
+}
+
+p {
     font-size: 1em;
     padding-left: 15px;
     text-align: left;
