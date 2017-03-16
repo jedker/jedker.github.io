@@ -18,16 +18,18 @@ section h1 span {
 font-size: 20px;
 }
 
-section h1 a{
+#click a{
+    display: block;
     text-decoration: none;
-    color: rgba(255,255,255, 1);
+    color: rgba(255,255,255, 0.7);
+    background-color: rgba(0,0,0, 0.7);
     font-weight: 200;
     text-transform:;
     padding: 10px;
-    font-size: 0.8em;
-    position: absolute;
+    font-size: 1em;
+    position: relative;
     /*For centering */
-    top: 511.5px;
+    top: -42px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -36,35 +38,46 @@ section h1 a{
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
 }
 
-section h1 a:hover {
-    color: rgba(255,255,255, 0.7);
+#click a:hover {
+    color: rgba(255,255,255, 1);
 }
 .slider_container {
     position: fixed;
    top:100%;
   transform: translateY(-100%);
     width: 100%;
-    height: 20px;
-    z-index: 9999;
+    height: 0;
+    z-index: 1;
 }
+
 .slider {
     width: 100%;
-    height: 20px;
+    height:0 ;
     background-color: rgba(0, 0, 0, 0.7);
-    position: relative;
     cursor: pointer;
     margin: 0 auto;
+    z-index: 1;
+    position: absolute;
 
 }
 #click {
     margin: 0 auto;
+    height:0;
+    margin-top:;
 }
 #arrow {
+    display: block;
+    position: absolute;
+    top: -40px;
     opacity: 0.5;
     display: block;
     height: 20px;   
     width: auto;
-    margin: 0 auto;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #click.rotated {
@@ -75,9 +88,13 @@ section h1 a:hover {
     opacity: 1;
 }
 
-
-.hidden h1, .hidden p {
+.form {
+    display: ;
+}
+.hidden h2, .hidden h3, .hidden form{
     color: white;
+    z-index: 9999;
+    padding: 5px;
 }
 .hidden p {
     border-left: 3px solid white;
@@ -85,23 +102,58 @@ section h1 a:hover {
     margin: 20px;
 }
 
+.form input {
+    padding: 5px;
+    margin: 10px;
+}
+
+input[type=text] {
+    background-color: rgba(141, 111, 153, 0.05);
+    color: white;
+    font-size: 1em;
+}
+
+input [type=text]:focus{
+color: rgba(141, 111, 153, 0.9);
+}
+input[type=button], input[type=submit] {
+    background-color: rgba(141, 111, 153, 0.9);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1em;
+    border: 1px solid white;
+}
+input[type=button]:hover, input[type=submit]:hover{
+    border: 1px solid rgba(141, 111, 153, 1);
+    background-color: #FFF;
+    color: black;
+}
 
 .hidden{
 
     display: none;
-    height: 300px;
+    height: 440px;
     background-color: rgba(0, 0, 0, 0.7);
     margin: 0;
     position: absolute;
-
     color: #fff;
     width: 100%;
+    z-index: 1;
+
 
 }
 
+.hidden div {
+    width: 100%;
+    height: 100%;
+}
 .content h2 {
    
-    margin:20px 0 20px; 0;
+    margin:20px 0 20px; 
     padding: 10px 10px;
     text-align: center;
     color: #B38DB0;
@@ -255,14 +307,11 @@ section .container {
 .photo {
     background: 
      linear-gradient(to bottom, rgba(141, 111, 153,0.6), rgba(255,255,255, 0)),
-    url('img/kobieta1.jpeg') no-repeat top right 75%;
+    url('kobieta1.jpeg') no-repeat top right 30%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 480px;
-    -webkit-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset -1px -200px 0px -100px rgba(0,0,0,0.75);
-    box-shadow: inset -1px -200px 0px -150px rgba(0,0,0,0.75);
 }
 
 .table_1 {
@@ -287,18 +336,18 @@ section .container {
 /******** PRODUCT IMAGES SIZING AND SHADOW ********/
 
  .table_3 {
-    background: url('img/bio_hyalux_lips.jpg') no-repeat center center;
+    background: url('bio_hyalux_lips.jpg') no-repeat center center;
 }
 
 .table_4 {
-    background: url('img/bio_hyalux_fine_lines.jpg') no-repeat center center;
+    background: url('bio_hyalux_fine_lines.jpg') no-repeat center center;
 }
 .table_5 {
-    background: url('img/bio_hyalux_soft.jpg') no-repeat center center;
+    background: url('bio_hyalux_soft.jpg') no-repeat center center;
     }
 
 .table_6 {
-    background: url('img/bio_hyalux_deep.jpg') no-repeat center center;
+    background: url('bio_hyalux_deep.jpg') no-repeat center center;
 }
 
 .table_3, .table_4, .table_5, .table_6 {
@@ -312,7 +361,12 @@ section .container {
     position: relative;
 }
 
-
+p {
+    font-size: 1em;
+    padding-left: 15px;
+    text-align: left;
+    margin:0px 20px  80px 30px;
+}
 
 #lips, #fine, #basic, #deep {
     transform: translateX(-1900px);
@@ -322,12 +376,7 @@ section .container {
     margin:0px 20px  80px 30px;
 }
 
-p {
-    font-size: 1em;
-    padding-left: 15px;
-    text-align: left;
-    margin:0px 20px  80px 30px;
-}
+
 #lips {
      border-left: 5px solid rgb(154, 0, 13);
 }
@@ -584,7 +633,7 @@ nav {
 nav .container {
     border-bottom: 5px solid rgb(141, 111, 153);
     background: #FFF;
-    width: 100%;
+    width: 80%;
     display: inline-flex;
     height: 80px;
     flex-direction: row;
