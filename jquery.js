@@ -1,15 +1,11 @@
-var divs = $('#nav_bar');
-$(window).on('scroll', function() {
-   var st = $(this).scrollTop();
-   divs.css({ 'opacity' : (1 - st/1100) });
-});
+$(document).ready(function(){
 
 
 
 var diva = $('.photo');
 $(window).on('scroll', function() {
    var sp = $(this).scrollTop();
-   diva.css({ 'opacity' : (1 - sp/1200) });
+   diva.css({ 'opacity' : (1 - sp/600) });
 });
 
 (function($) {
@@ -101,6 +97,74 @@ win.scroll(function(event) {
 });
 
 
+
+
+
+
+//Anchor elements smooth scroll when clicked
+$("#opis").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#czym").offset().top
+    }, 700);
+});
+
+$("#prod").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#produkty").offset().top
+    }, 700);
+});
+
+$("#button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#myDiv").offset().top
+    }, 1000);
+});
+
+
+//remove/show black slider on scroll
+var mywindow = $(window);
+var mypos = mywindow.scrollTop();
+var up = false;
+var newscroll;
+mywindow.scroll(function () {
+    newscroll = mywindow.scrollTop();
+    if (newscroll > mypos && !up) {
+        $('#nav_bar').stop().slideToggle(300);
+        up = !up;
+        console.log(up);
+    } else if(newscroll < mypos && up) {
+          $('#nav_bar').stop().slideToggle(300);
+        up = !up;
+    }
+    mypos = newscroll;
+});
+
+$(document).ready(function(){
+
+var rotation = 0;
+
+jQuery.fn.rotate = function(degrees) {
+    $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
+                 '-moz-transform' : 'rotate('+ degrees +'deg)',
+                 '-ms-transform' : 'rotate('+ degrees +'deg)',
+                 'transform' : 'rotate('+ degrees +'deg)'});
+};
+ $('#click').click(function() {
+    rotation += 180;
+    $(this).rotate(rotation);
+});
+
+  $("#click").click(function(){
+      if($(".slider").css('bottom') == '0px'){
+          $(".slider").animate({bottom:'300px'},400);
+      }
+      else
+      {
+          $(".slider").animate({bottom:'0px'},300);
+      }
+      
+  });
+
 $("#click").click(function () {
 
     $header = $(this);
@@ -115,6 +179,5 @@ $("#click").click(function () {
 
 });
 
-
-
-
+});
+});
